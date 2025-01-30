@@ -34,11 +34,11 @@ body {
 h1, h2, h3 {
     font-weight: 900;
     font-family: var(--secondaryFont);
-    margin: calc(var(--separation) /2);
+    margin: calc(var(--separation) /2) 0;
 }
 
 h1 {
-    font-size: 4,4rem;
+    font-size: 4.4rem;
 }
 
 h2 {
@@ -52,9 +52,67 @@ h3 {
 img {
     max-width: 100%;
     display: block;
+    height: auto;
 }
+
 
 /*Utilities*/
 .text-center {
     text-align: center;
+}
+
+/*Header*/
+.header{
+    background-color: var(--black);
+    padding: calc(var(--separation)*3) 0;
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .content-header {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.text-header {
+    text-align: center;
+    padding-top: var(--separation);
+}
+
+@media (min-width: 768px) {
+    .text-header{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+.text-header p {
+    margin: 0;
+}
+
+.tagline-product {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.product-name {
+    font-size: 6rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .product-name {
+        font-size: 10rem;
+        line-height: 1;
+    }
+}
+
+.product-prize span {
+    font-size: 6rem;
+    font-weight: 900;
+
 }

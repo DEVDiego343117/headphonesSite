@@ -61,6 +61,14 @@ img {
     text-align: center;
 }
 
+/*degraded*/
+.green-degraded {
+    color: transparent;
+    background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 /*Header*/
 .header{
     background-color: var(--black);
@@ -114,5 +122,44 @@ img {
 .product-prize span {
     font-size: 6rem;
     font-weight: 900;
+}
 
+/*Navigation*/
+.icons {
+    padding: var(--separation) 0;
+}
+
+@media (min-width: 768px) {
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2rem;
+    }
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: calc(var(--separation) / 2);
+}
+
+.icon:last-of-type {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .icon {
+        margin: 0;
+    }
+}
+
+.icon img {
+    width: 5rem;
+}
+
+.icon h3 {
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-top: calc( var(--separation) / 2 );
 }

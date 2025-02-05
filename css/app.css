@@ -223,3 +223,65 @@ img {
     font-size: 2rem;
     line-height: 2;
 }
+
+/*Models*/
+
+.modelos {
+    padding: var(--separation) 0;
+}
+
+.header-models {
+    font-size: 6rem;
+    margin-bottom: var(--separation);
+}
+
+.list-models {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.model {
+    background-color: var(--lightGray);
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    color: var(--primary);
+    border-radius: 2rem;
+    min-height: 20rem;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 18rem;
+   
+}
+
+.model h3 {
+    font-size: 2.5rem;
+}
+
+.model:first-of-type{
+    margin-bottom: 0;
+}
+
+.model-x {
+    background-image: url(../img/modelo-x.svg);
+}
+
+.model-y {
+    background-image: url(../img/modelo-y.svg);
+
+}
+
+.model-z {
+    background-color: var(--primary);
+    background-image: url(../img/modelo-z.svg);
+    color: var(--white)
+}
+
+.model .price {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 0;
+}
+
+.model-z .price {
+    font-size: 6Srem;
+}
